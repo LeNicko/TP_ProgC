@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 int main() {
-    int a =5;
-    int b =6;
+    int num1 =5;
+    int num2 =6;
     char op;
 
 
