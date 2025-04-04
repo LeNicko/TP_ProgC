@@ -7,7 +7,7 @@ int main() {
 
 
 
-    printf("Entrez l'opérateur (+, -, *, /, %, &, |, ~): ");
+    printf("Entrez l'opérateur (+ - * / % & | ~): ");
     scanf(" %c", &op);
 
     switch(op) {
