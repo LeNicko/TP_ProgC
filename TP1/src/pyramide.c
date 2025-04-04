@@ -3,8 +3,14 @@
 
 int main() {
   int j = 5;
-  for (int i=0;i<j;i++)
-{
-printf("*");
-}
-}
+  int boucle;
+  for (boucle =0;boucle=j;boucle++)
+    {
+      for (int i=0;i<j;i++)
+    {
+    printf("*");
+    }
+      printf(" \n");
+    }
+
+  }
