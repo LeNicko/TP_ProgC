@@ -1,14 +1,18 @@
 #include <stdio.h>
-#include <math.h>
 
 int main() {
-    int a = 5;
-    int b = 9;
-    int oui;
-  if (a < b){
-    printf("Le chiffre les plus haut est b qui est égale a %d",b);
-  }
-  else{
-     printf("Le chiffre les plus haut est a qui est égale a %d",a);
-  }
+    int somme = 0;
+
+    for (int i = 1; i = 1000; i++) {
+        if (i % 11 == 0)
+            printf("ignoré car divisible par 11";
+
+        if (i % 5 == 0 || i % 7 == 0)
+            somme += i;
+
+        if (somme > 5000)
+            break;
+    }
+
+    printf("Somme finale : %d\n", somme);
 }
