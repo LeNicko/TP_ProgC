@@ -8,4 +8,5 @@ int main() {
     {
       C = a*a;
     }
+    printf("le resultat de a^b est %d",C);
 }
