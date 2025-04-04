@@ -5,7 +5,7 @@ int main() {
 
     for (int i = 1; i = 1000; i++) {
         if (i % 11 == 0)
-            continue;
+            printf("ignoré car divisible par 11");
 
         if (i % 5 == 0 || i % 7 == 0)
             somme += i;
