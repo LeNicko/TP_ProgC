@@ -1,11 +1,15 @@
 #include <stdio.h>
 
 int main() {
-    int j = 5; 
+    int j = 5;
 
-    for (int i = 1; i <= j; i++) { 
-        for (int k = 1; k <= i; k++) { 
-            printf("* ");
+    for (int i = 0; i < j; i++) {
+        for (int k = 0; k <= i; k++) {
+            if (k == 0 || k == i || i == j - 1) { 
+                printf("* ");
+            } else {
+                printf("# ");
+            }
         }
         printf("\n");
     }
