@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    int nombres[] = {1, 2, 3, 4, 5};
+    int nombres[] = {0, 4096, 65536, 65535, 1024};
     int taille = sizeof(nombres) / sizeof(nombres[0]);
 
     for (int i = 0; i < taille; i++) {
