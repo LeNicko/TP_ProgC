@@ -3,12 +3,7 @@
 int main() {
     int num1 =5;
     int num2 =6;
-    char op;
-
-
-
-    printf("Entrez l'opérateur (+ - * / % & | ~): ");
-    scanf(" %c", &op);
+    char op = '+';
 
     switch(op) {
         case '+':
