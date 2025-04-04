@@ -3,7 +3,7 @@
 
 int main() {
   int j = 5;
-  for (int i=0;i<j;i++);
+  for (int i=0;i<j;i++)
 {
 printf("*");
 }
