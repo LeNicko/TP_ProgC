@@ -1,14 +1,13 @@
 #include <stdio.h>
 
 int main() {
-    int j = 5;
-    int boucle;
-    
-    for (boucle = 0; boucle < j; boucle++) { 
-        for (int i = 0; i < j; i++) {
-            printf("*");
+    int j = 5; 
+
+    for (int i = 1; i <= j; i++) { 
+        for (int k = 1; k <= i; k++) { 
+            printf("* ");
         }
-        printf("\n"); 
+        printf("\n");
     }
 
     return 0;
