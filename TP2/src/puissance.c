@@ -3,10 +3,10 @@
 int main() {
     int a = 8;
     int b = 7;
-    int C;
-  for (int i = 0;i=b;i++)
+    int c= 1;
+  for (int i = 0;i<b;i++)
     {
-      C = a*a;
+      c = c*a;
     }
-    printf("le resultat de a^b est %d",C);
+    printf("le resultat de a^b est %d",c);
 }
