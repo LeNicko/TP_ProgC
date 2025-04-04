@@ -7,7 +7,7 @@ int main() {
     for (int i = 0; i < taille; i++) {
         printf("Le nombre %d en binaire est : ", nombres[i]);
 
-        for (int j = 3; j >= 0; j--) {
+        for (int j = 31; j >= 0; j--) {
             int bit = (nombres[i] >> j) & 1;
             printf("%d", bit);
             if (j % 4 == 0) {
