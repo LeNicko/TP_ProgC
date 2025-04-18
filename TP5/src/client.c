@@ -72,7 +72,7 @@ int main()
   server_addr.sin_port = htons(PORT);
 
   // Définir l'adresse IP du serveur (par exemple, "192.168.1.1")
-  const char *server_ip = "192.168.1.1";  // Remplacez par l'IP de votre serveur
+  const char *server_ip = "10.0.30.5";  // Remplacez par l'IP de votre serveur
   if (inet_pton(AF_INET, server_ip, &server_addr.sin_addr) <= 0)
   {
     perror("inet_pton échoué");
