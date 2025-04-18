@@ -1,3 +1,10 @@
+/*
+ * SPDX-FileCopyrightText: 2021 John Samuel
+ *
+ * SPDX-License-Identifier: GPL-3.0-or-later
+ *
+ */
+
 #include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -5,10 +12,15 @@
 #include <sys/types.h>
 #include <sys/socket.h>
 #include <netinet/in.h>
-#include <arpa/inet.h> // nécessaire pour inet_pton
 
 #include "client.h"
 
+/**
+ * Fonction pour envoyer et recevoir un message depuis un client connecté à la socket.
+ *
+ * @param socketfd Le descripteur de la socket utilisée pour la communication.
+ * @return 0 en cas de succès, -1 en cas d'erreur.
+ */
 int envoie_recois_message(int socketfd)
 {
   char data[1024];
@@ -70,14 +82,7 @@ int main()
   memset(&server_addr, 0, sizeof(server_addr));
   server_addr.sin_family = AF_INET;
   server_addr.sin_port = htons(PORT);
-
-  // Définir l'adresse IP du serveur (par exemple, "192.168.1.1")
-  const char *server_ip = "10.0.30.5";  // Remplacez par l'IP de votre serveur
-  if (inet_pton(AF_INET, server_ip, &server_addr.sin_addr) <= 0)
-  {
-    perror("inet_pton échoué");
-    exit(EXIT_FAILURE);
-  }
+  server_addr.sin_addr.s_addr = INADDR_ANY;
 
   // demande de connection au serveur
   int connect_status = connect(socketfd, (struct sockaddr *)&server_addr, sizeof(server_addr));
