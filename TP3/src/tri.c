@@ -7,8 +7,7 @@ int main() {
 
     srand(time(NULL));
     for (int i = 0; i < 100; i++) {
-        tab[i] = rand() % 2001 - 1000; // Valeurs entre -1000 et 1000
-    }
+        tab[i] = rand() % 2001 - 1000; 
 
     printf("Tableau non trié :\n");
     for (int i = 0; i < 100; i++) {
